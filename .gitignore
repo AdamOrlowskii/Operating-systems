@@ -1,0 +1,7 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Operating-systems/v17/Browse.VC.db-wal
+/.vs/Operating-systems/v17/Browse.VC.opendb
+/.vs/Operating-systems/v17/Browse.VC.db-shm
