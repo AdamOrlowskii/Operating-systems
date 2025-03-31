@@ -1,0 +1,12 @@
+﻿  Philosophers.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\semaphore(16): warning STL4038: The contents of <semaphore> are available only with C++20 or later.
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(13,19): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(13,1): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(13,19): error C2059: błąd składniowy: „<”
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(24,9): error C2065: "table": niezadeklarowany identyfikator
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(44,9): error C2065: "table": niezadeklarowany identyfikator
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(54,38): error C3861: "stoi": identyfikatora nie odnaleziono
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(68,5): error C2065: "table": niezadeklarowany identyfikator
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(68,17): error C2059: błąd składniowy: „'symbol'”
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(80,12): error C2065: "table": niezadeklarowany identyfikator
+C:\Users\48730\source\repos\Philosophers\Philosophers.cpp(80,5): error C2541: "delete": nie można usunąć obiektów, które nie są wskaźnikami
