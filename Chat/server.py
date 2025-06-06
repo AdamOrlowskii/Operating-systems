@@ -4,12 +4,12 @@ import threading
 HOST = '127.0.0.1'
 PORT = 1234
 LISTENER_LIMIT = 5
-active_clients = [] # All connected users
+active_clients = []
+
 
 def listen_for_messages(client, username):
     
     while True:
-
         message = client.recv(2048).decode('utf-8')
         if message != '':
             final_msg = username + '~' + message
@@ -30,7 +30,6 @@ def send_messages_to_all(message):
         send_message_to_client(user[1], message)
 
 
-
 def client_handler(client):
 
     while True:
@@ -45,6 +44,7 @@ def client_handler(client):
 
     threading.Thread(target=listen_for_messages, args=(client, username, )).start()
 
+
 def main():
     #SOCK_STREAM uses TCP
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -55,16 +55,14 @@ def main():
     except:
         print(f"Unable to bind to host {HOST} and port {PORT}")
 
-    #Server limit
     server.listen(LISTENER_LIMIT)
 
     while True:
         client, address = server.accept()
         print(f"Successfully connected to client {address[0], address[1]}")
 
-        threading.Thread(target=client_handler, args=(client, )).start() # It has to be a coma after the client
+        threading.Thread(target=client_handler, args=(client, )).start()
 
 
 if __name__ == '__main__':
     main()
-
