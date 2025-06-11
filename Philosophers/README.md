@@ -1,6 +1,7 @@
 # Dining philosophers problem - Problem jedzących filozofów
 
 1. Opis problemu
+
 Problem ucztujących filozofów to klasyczny problem synchronizacji w programowaniu współbieżnym. Pięciu filozofów siedzi wokół stołu, przy którym znajduje się pięć widelców. Każdy filozof musi posiadać dwa widelce, aby móc jeść. Problem polega na synchronizacji dostępu do wspólnych zasobów (widelców) w sposób zapobiegający zakleszczeniom (deadlock) i zagłodzeniu (starvation).
 
 2. Instrukcja uruchomienia (Windows, Visual Studio)
